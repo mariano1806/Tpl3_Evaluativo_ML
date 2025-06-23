@@ -12,8 +12,4 @@ Este proyecto incluye un cuaderno de Jupyter para explorar, limpiar, normalizar 
    ```bash
    pip install -r requirements.txt
    ```
-2. Abrir el cuaderno:
-   ```bash
-   jupyter notebook analisis_preparacion.ipynb
-   ```
-3. Ejecutar las celdas en orden.
+2. Ejecutar las celdas en orden.
