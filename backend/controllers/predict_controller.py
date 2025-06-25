@@ -1,6 +1,7 @@
 from fastapi import APIRouter
 from backend.models.input_schema import DatosEntrada
 from backend.services.predict_service import predecir
+from pathlib import Path
 import json
 router = APIRouter()
 
@@ -10,7 +11,9 @@ def hacer_prediccion(datos: DatosEntrada):
 @router.get("/metricas")
 def obtener_metricas():
     try:
-        with open("metricas.json", "r") as f:
+        ruta_actual = Path().resolve() / "backend" / "controllers"
+        ruta_metricas = ruta_actual.parent / "train" / "metricas.json"
+        with open(ruta_metricas, "r") as f:
             metricas = json.load(f)
         return metricas
     except Exception as e:
