@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <div className="relative bg-[#f5c8b8] text-[#263238] text-center  px-6 shadow-lg mb-10 overflow-hidden">
+    <div className="relative bg-[#f5c8b8] text-[#263238] text-center overflow-hidden">
       <div className="max-w-4xl mx-auto relative z-10">
         <h1 className="text-4xl mt-15 md:text-5xl font-extrabold mb-10">
           Predicción de Riesgo de Burnout
