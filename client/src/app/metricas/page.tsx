@@ -29,8 +29,8 @@ function InfoBox({
   value: string;
 }) {
   return (
-    <div className="flex items-center space-x-4 bg-white p-4 rounded-xl shadow-md">
-      <div className="text-indigo-600 text-xl">{icon}</div>
+    <div className="flex rounded-4xl  bg-[rgba(245,157,219,0.23) items-center space-x-4 bg-white p-4 rounded-xl shadow-md">
+      <div className="text-pink-600 text-xl">{icon}</div>
       <div>
         <h4 className="text-sm text-gray-500">{title}</h4>
         <p className="font-semibold text-lg">{value}</p>
@@ -85,7 +85,7 @@ export default function ResumenYMetricas() {
   }, []);
 
   return (
-    <div className="max-w-5xl mx-auto px-6 py-10 space-y-10">
+    <div className="max-w-5xl rounded-4xl mt-6 bg-[rgba(37,100,72,0.21)] mx-auto px-6 py-10 space-y-10">
       <div className="text-center">
         <h2 className="text-3xl font-bold">Modelo de IA Avanzado</h2>
         <p className="text-gray-600">Regresión logística optimizada con técnicas de machine learning</p>
@@ -100,7 +100,7 @@ export default function ResumenYMetricas() {
 </div>
 
       <div>
-        <h3 className="text-2xl font-bold text-gray-800 mb-4 text-center">Rendimiento del Modelo</h3>
+        <h3 className="text-2xl font-bold mb-4 text-center">Rendimiento del Modelo</h3>
 
         {loading && <p className="text-center text-gray-500">Cargando métricas...</p>}
         {error && <p className="text-center text-red-600">{error}</p>}
